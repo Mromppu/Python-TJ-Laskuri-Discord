@@ -87,11 +87,11 @@ async def tj():
                 päivät = json_object[f'pvsuoritettu']
             
             if 1 <= int(päivät) and int(päivät) < 165:
-                uusiraha = raha + 5.2
+                uusiraha = raha + 5.40
             if 166 <= int(päivät) and int(päivät) < 255:
-                uusiraha = raha + 8.7
+                uusiraha = raha + 9.00
             if 256 <= int(päivät) and int(päivät) < 347:
-                uusiraha = raha + 12.1
+                uusiraha = raha + 12.50
 
             uusiraha2 = round(uusiraha,1)
             channel = client.get_channel(kanava_id)
