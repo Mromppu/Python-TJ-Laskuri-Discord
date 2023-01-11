@@ -101,7 +101,7 @@ async def tj():
 
             **TJ:** `{days_left}`!
             {nimi} on palvellut `{round(percent_complete,1)}`% asepalveluksestaan. (Eli: `{päivät}` päivää.)
-            {nimi} on tienannut `{uusiraha2}` Eur päivärahaa yhteensä.
+            {nimi} on tienannut `{"{:.2f}".format(uusiraha2)}` Eur päivärahaa yhteensä.
             """
             embed = discord.Embed (title = '`😄📅` **TJ Laskuri.**', description = desc)
             embed.set_thumbnail (url = 'https://i.imgur.com/2yjXFdG.jpg')
